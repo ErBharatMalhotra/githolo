@@ -42,9 +42,9 @@ export default function ProfileClient({ stats }: ProfileClientProps) {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           {/* LEFT COLUMN: 3D CARD SHOWCASE & EXPORT ACTIONS */}
-          <div className="lg:col-span-5 flex flex-col items-center">
+          <div className="md:col-span-5 flex flex-col items-center">
             {/* Card Holder */}
             <div className="w-full flex justify-center py-2">
               <div id="holo-card-profile" className="w-[360px] max-w-full">
@@ -75,7 +75,7 @@ export default function ProfileClient({ stats }: ProfileClientProps) {
           </div>
 
           {/* RIGHT COLUMN: TELEMETRY, ARCHETYPE PROFILE, STAT BREAKDOWN */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="md:col-span-7 space-y-6">
             {/* Developer Identity Card */}
             <div className="bg-zinc-900/40 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
               <div className="flex items-center gap-4">
