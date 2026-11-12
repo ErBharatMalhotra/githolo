@@ -29,22 +29,22 @@ export function ThemeSelector({ currentTheme, onSelectTheme }: ThemeSelectorProp
         <Palette className="w-3.5 h-3.5 text-cyan-400" />
         <span>SELECT COLLECTIBLE THEME</span>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+      <div className="grid grid-cols-2 gap-2">
         {themes.map((t) => {
           const isActive = currentTheme === t.id;
           return (
             <button
               key={t.id}
               onClick={() => onSelectTheme(t.id)}
-              className={`flex flex-col items-center justify-center p-2.5 rounded-xl border text-left transition-all duration-200 cursor-pointer ${
+              className={`flex items-center gap-2.5 px-3 py-2.5 rounded-xl border text-left transition-all duration-200 cursor-pointer ${
                 isActive
-                  ? 'border-cyan-400 bg-cyan-950/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]'
-                  : 'border-white/10 bg-zinc-900/60 hover:border-white/20 hover:bg-zinc-800/50'
+                  ? 'border-cyan-400 bg-cyan-950/40 shadow-[0_0_15px_rgba(6,182,212,0.25)]'
+                  : 'border-white/10 bg-zinc-900/60 hover:border-white/20 hover:bg-zinc-800/60'
               }`}
             >
-              <div className={`w-full h-2 rounded-full bg-gradient-to-r ${t.color} mb-1.5`} />
-              <span className={`text-[10px] sm:text-[11px] font-mono font-medium leading-tight whitespace-normal text-center w-full px-0.5 ${
-                isActive ? 'text-cyan-300 font-bold' : 'text-zinc-300'
+              <span className={`w-3 h-3 rounded-full flex-shrink-0 bg-gradient-to-br ${t.color} shadow-sm ring-1 ring-white/20`} />
+              <span className={`text-xs font-mono font-medium truncate ${
+                isActive ? 'text-cyan-300 font-bold' : 'text-zinc-200'
               }`}>
                 {t.name}
               </span>
