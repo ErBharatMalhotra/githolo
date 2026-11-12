@@ -32,7 +32,7 @@ const GITHUB_QUERY = `
           }
           issues(states: [OPEN, CLOSED]) { totalCount }
           pullRequests { totalCount }
-          pullRequests(states: MERGED) { totalCount }
+          mergedPRs: pullRequests(states: MERGED) { totalCount }
         }
       }
       pinnedItems(first: 6, types: REPOSITORY) {
@@ -146,9 +146,11 @@ function computeNightOwlPercentage(weeks: any[]): number {
 
 export async function fetchDevData(username: string, token?: string): Promise<Partial<DevStats>> {
   const authToken = token || process.env.GITHUB_TOKEN || '';
+  console.log(`[GitHub API] Fetching user: ${username}, token present: ${Boolean(authToken)}, token length: ${authToken.length}`);
 
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
+    'User-Agent': 'GitHolo-App',
   };
 
   if (authToken) {
@@ -163,7 +165,9 @@ export async function fetchDevData(username: string, token?: string): Promise<Pa
   });
 
   if (!response.ok) {
-    throw new Error(`GitHub API returned ${response.status}: ${response.statusText}`);
+    const errorBody = await response.text();
+    console.error(`GitHub API error (${response.status}):`, errorBody);
+    throw new Error(`GitHub API returned ${response.status}: ${errorBody || response.statusText}`);
   }
 
   const json: GitHubRawResponse = await response.json();
