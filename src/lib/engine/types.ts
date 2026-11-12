@@ -15,7 +15,12 @@ export type CardTheme =
   | 'gold' 
   | 'obsidian' 
   | 'tokyo' 
-  | 'retro90s';
+  | 'retro90s'
+  | 'matrix'
+  | 'vaporwave'
+  | 'nordic'
+  | 'cosmic'
+  | 'secretrare';
 
 export interface TopLanguage {
   name: string;

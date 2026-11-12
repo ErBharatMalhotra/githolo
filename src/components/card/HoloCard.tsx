@@ -139,6 +139,46 @@ export function HoloCard({
       foil: 'linear-gradient(135deg, rgba(155,188,15,0.3), rgba(48,98,48,0.4), rgba(139,172,15,0.3))',
       badgeBg: 'bg-[#0f380f] border-[#8bac0f] text-[#9bbc0f]',
     },
+    matrix: {
+      bg: 'bg-gradient-to-br from-black via-[#031508] to-black',
+      border: 'border-[#00ff66]/50 shadow-[0_0_35px_rgba(0,255,102,0.3)]',
+      accent: 'text-[#00ff66]',
+      text: 'text-[#8affbe]',
+      foil: 'linear-gradient(135deg, rgba(0,255,102,0.35), rgba(0,180,100,0.2), rgba(20,240,120,0.4))',
+      badgeBg: 'bg-[#022008] border-[#00ff66]/40 text-[#00ff66]',
+    },
+    vaporwave: {
+      bg: 'bg-gradient-to-br from-[#2d1b4e] via-[#1a103c] to-[#0f0728]',
+      border: 'border-fuchsia-400/60 shadow-[0_0_35px_rgba(232,121,249,0.3)]',
+      accent: 'text-fuchsia-400',
+      text: 'text-pink-100',
+      foil: 'linear-gradient(135deg, rgba(244,114,182,0.4), rgba(56,189,248,0.4), rgba(168,85,247,0.4))',
+      badgeBg: 'bg-fuchsia-950/80 border-fuchsia-400/40 text-fuchsia-300',
+    },
+    nordic: {
+      bg: 'bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#090d16]',
+      border: 'border-cyan-400/50 shadow-[0_0_35px_rgba(34,211,238,0.25)]',
+      accent: 'text-cyan-300',
+      text: 'text-cyan-100',
+      foil: 'linear-gradient(135deg, rgba(34,211,238,0.35), rgba(96,165,250,0.3), rgba(255,255,255,0.4))',
+      badgeBg: 'bg-cyan-950/80 border-cyan-400/40 text-cyan-200',
+    },
+    cosmic: {
+      bg: 'bg-gradient-to-br from-[#180d2b] via-[#0d0714] to-[#05030a]',
+      border: 'border-purple-400/60 shadow-[0_0_35px_rgba(192,132,252,0.35)]',
+      accent: 'text-purple-300',
+      text: 'text-purple-100',
+      foil: 'linear-gradient(135deg, rgba(217,70,239,0.4), rgba(147,51,234,0.4), rgba(236,72,153,0.4))',
+      badgeBg: 'bg-purple-950/80 border-purple-400/40 text-purple-200',
+    },
+    secretrare: {
+      bg: 'bg-gradient-to-br from-[#1c1917] via-[#0c0a09] to-[#292524]',
+      border: 'border-amber-400/70 shadow-[0_0_40px_rgba(250,204,21,0.35)]',
+      accent: 'text-amber-300',
+      text: 'text-amber-100',
+      foil: 'linear-gradient(135deg, rgba(250,204,21,0.5), rgba(236,72,153,0.3), rgba(6,182,212,0.4), rgba(250,204,21,0.5))',
+      badgeBg: 'bg-amber-950/90 border-amber-500/50 text-amber-300',
+    },
   };
 
   const currentTheme = themeStyles[theme] || themeStyles.cyberpunk;

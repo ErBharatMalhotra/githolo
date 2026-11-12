@@ -17,11 +17,16 @@ describe('ThemeSelector Component', () => {
       />
     );
 
-    expect(screen.getByText('Cyberpunk Neon')).toBeInTheDocument();
+    expect(screen.getByText('Cyberpunk')).toBeInTheDocument();
     expect(screen.getByText('Gold Foil')).toBeInTheDocument();
-    expect(screen.getByText('Obsidian Matte')).toBeInTheDocument();
+    expect(screen.getByText('Obsidian')).toBeInTheDocument();
     expect(screen.getByText('Tokyo Dark')).toBeInTheDocument();
-    expect(screen.getByText('Retro 90s Gameboy')).toBeInTheDocument();
+    expect(screen.getByText('Gameboy 90s')).toBeInTheDocument();
+    expect(screen.getByText('Matrix Code')).toBeInTheDocument();
+    expect(screen.getByText('Vaporwave')).toBeInTheDocument();
+    expect(screen.getByText('Nordic Frost')).toBeInTheDocument();
+    expect(screen.getByText('Cosmic Holo')).toBeInTheDocument();
+    expect(screen.getByText('Secret Rare')).toBeInTheDocument();
   });
 });
 

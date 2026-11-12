@@ -14,7 +14,7 @@ Interactive · 4K Export · Viral Share · Zero Watermarks · Open Source
 
 ## Features
 
-- **5 Collectible Themes** — Cyberpunk Neon, Gold Foil, Obsidian Matte, Tokyo Dark, Retro 90s Gameboy
+- **10 Collectible Themes** — Cyberpunk Neon, Gold Foil, Obsidian Matte, Tokyo Dark, Retro 90s Gameboy, Matrix Code, Vaporwave Sunset, Nordic Frost, Cosmic Holo, Secret Rare Prismatic
 - **Real GitHub Telemetry** — Commits, PRs, stars, followers, streak, languages, pinned repos
 - **RPG Stat Engine** — Attack (Velocity), Defense (Stability), Mana (Diversity), Luck (Magnetism), Overall Power
 - **Archetype Classification** — 12 developer archetypes with rarity tiers (Standard → Mythic)

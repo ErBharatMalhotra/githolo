@@ -11,11 +11,16 @@ interface ThemeSelectorProps {
 
 export function ThemeSelector({ currentTheme, onSelectTheme }: ThemeSelectorProps) {
   const themes: Array<{ id: CardTheme; name: string; color: string; desc: string }> = [
-    { id: 'cyberpunk', name: 'Cyberpunk Neon', color: 'from-cyan-400 to-fuchsia-500', desc: 'Electric blue and neon magenta foil' },
+    { id: 'cyberpunk', name: 'Cyberpunk', color: 'from-cyan-400 to-fuchsia-500', desc: 'Electric blue and neon magenta foil' },
     { id: 'gold', name: 'Gold Foil', color: 'from-amber-300 to-yellow-600', desc: 'Prestige 24K metallic sheen' },
-    { id: 'obsidian', name: 'Obsidian Matte', color: 'from-zinc-700 to-purple-900', desc: 'Stealth dark finish with violet accents' },
+    { id: 'obsidian', name: 'Obsidian', color: 'from-zinc-700 to-purple-900', desc: 'Stealth dark finish with violet accents' },
     { id: 'tokyo', name: 'Tokyo Dark', color: 'from-pink-500 to-indigo-600', desc: 'Akihabara midnight aesthetic' },
-    { id: 'retro90s', name: 'Retro 90s Gameboy', color: 'from-[#8bac0f] to-[#0f380f]', desc: 'Vintage 8-bit dot matrix green' },
+    { id: 'retro90s', name: 'Gameboy 90s', color: 'from-[#8bac0f] to-[#0f380f]', desc: 'Vintage 8-bit dot matrix green' },
+    { id: 'matrix', name: 'Matrix Code', color: 'from-[#00ff66] to-[#032b0c]', desc: 'Digital rain terminal phosphor glow' },
+    { id: 'vaporwave', name: 'Vaporwave', color: 'from-fuchsia-400 to-cyan-300', desc: '80s synthwave neon magenta sunset' },
+    { id: 'nordic', name: 'Nordic Frost', color: 'from-cyan-300 to-blue-600', desc: 'Sub-zero arctic glacial shimmer' },
+    { id: 'cosmic', name: 'Cosmic Holo', color: 'from-purple-400 to-fuchsia-600', desc: 'Deep nebula starlight refraction' },
+    { id: 'secretrare', name: 'Secret Rare', color: 'from-yellow-300 via-pink-400 to-cyan-300', desc: 'Prismatic platinum etched luxury' },
   ];
 
   return (
