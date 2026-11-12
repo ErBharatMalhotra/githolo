@@ -289,7 +289,7 @@ export function HoloCard({
             </div>
           </div>
           <div className="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">
-            GITHOLO.DEV
+            GITHOLO.BHARATDN.COM
           </div>
         </div>
       </div>

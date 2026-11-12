@@ -38,6 +38,6 @@ describe('HoloCard Component', () => {
 
     expect(screen.getByText('ULTIMATE SKILL')).toBeInTheDocument();
     expect(screen.getByText(dummyStats.ultimateSkill)).toBeInTheDocument();
-    expect(screen.getByText('GITHOLO.DEV')).toBeInTheDocument();
+    expect(screen.getByText('GITHOLO.BHARATDN.COM')).toBeInTheDocument();
   });
 });
