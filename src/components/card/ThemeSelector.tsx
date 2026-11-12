@@ -43,7 +43,7 @@ export function ThemeSelector({ currentTheme, onSelectTheme }: ThemeSelectorProp
               }`}
             >
               <div className={`w-full h-2 rounded-full bg-gradient-to-r ${t.color} mb-1.5`} />
-              <span className={`text-[11px] font-mono font-medium truncate w-full text-center ${
+              <span className={`text-[10px] sm:text-[11px] font-mono font-medium leading-tight whitespace-normal text-center w-full px-0.5 ${
                 isActive ? 'text-cyan-300 font-bold' : 'text-zinc-300'
               }`}>
                 {t.name}
