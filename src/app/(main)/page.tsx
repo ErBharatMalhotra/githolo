@@ -315,6 +315,7 @@ export default function HomePage() {
         <footer className="mt-16 text-center text-zinc-600 text-xs font-mono">
           <p>Built with <span className="text-red-500">♥</span> by <a href="https://bharatdn.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">ErBharatMalhotra</a></p>
           <p className="mt-1">Open Source · MIT License · No Watermarks · <a href="https://github.com/ErBharatMalhotra/GitHolo" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">Source Code</a></p>
+          <p className="mt-2"><a href="https://readme.bharatdn.com" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline font-mono">▸ Craft your README at ReadmeCraft</a></p>
         </footer>
       </main>
     </div>
