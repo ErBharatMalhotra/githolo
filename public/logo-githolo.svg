@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="GitHolo">
+  <!-- Deep space background -->
+  <rect width="512" height="512" rx="64" fill="#05080f"/>
+  <!-- Holographic border -->
+  <rect x="2" y="2" width="508" height="508" rx="62" fill="none" stroke="url(#holoBorder)" stroke-width="4"/>
+  
+  <defs>
+    <linearGradient id="holoBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7c3aed" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="holoFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#00ff88"/>
+    </linearGradient>
+    <filter id="holoGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="scanlines" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9 0.01" numOctaves="1" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.3 0" result="scan"/>
+      <feBlend in="SourceGraphic" in2="scan" mode="multiply"/>
+    </filter>
+  </defs>
+
+  <!-- Main symbol: 3D cube / holographic card -->
+  <g transform="translate(256, 256)" filter="url(#holoGlow)">
+    <!-- Back face -->
+    <path d="M -60 -60 L 60 -60 L 80 -40 L -40 -40 Z" fill="url(#holoFill)" opacity="0.3" stroke="#00f5ff" stroke-width="1" stroke-opacity="0.5"/>
+    <!-- Right face -->
+    <path d="M 60 -60 L 80 -40 L 80 40 L 60 60 Z" fill="url(#holoFill)" opacity="0.5" stroke="#7c3aed" stroke-width="1" stroke-opacity="0.5"/>
+    <!-- Front face (card) -->
+    <path d="M -60 -40 L 60 -40 L 60 60 L -60 60 Z" fill="#0a0f1a" stroke="url(#holoFill)" stroke-width="2" filter="url(#scanlines)"/>
+    <!-- Top face -->
+    <path d="M -60 -60 L -40 -40 L 80 -40 L 60 -60 Z" fill="url(#holoFill)" opacity="0.4" stroke="#00ff88" stroke-width="1" stroke-opacity="0.5"/>
+    
+    <!-- Holographic shimmer lines on card -->
+    <g stroke="#00f5ff" stroke-width="1" stroke-opacity="0.6" stroke-dasharray="4,8">
+      <line x1="-50" y1="-20" x2="50" y2="-20"/>
+      <line x1="-50" y1="0" x2="50" y2="0"/>
+      <line x1="-50" y1="20" x2="50" y2="20"/>
+      <line x1="-50" y1="40" x2="50" y2="40"/>
+    </g>
+    
+    <!-- Corner brackets (holographic UI style) -->
+    <g stroke="url(#holoFill)" stroke-width="3" fill="none">
+      <!-- TL -->
+      <path d="M -55 -35 H -35 M -55 -35 V -15"/>
+      <!-- TR -->
+      <path d="M 55 -35 H 35 M 55 -35 V -15"/>
+      <!-- BL -->
+      <path d="M -55 55 H -35 M -55 55 V 35"/>
+      <!-- BR -->
+      <path d="M 55 55 H 35 M 55 55 V 35"/>
+    </g>
+    
+    <!-- Floating particle -->
+    <circle cx="0" cy="-70" r="3" fill="#00f5ff" opacity="0.8">
+      <animate attributeName="cy" values="-70;-80;-70" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Typography: "GitHolo" -->
+  <text x="256" y="415" text-anchor="middle" font-family="'Space Grotesk', 'Segoe UI', sans-serif" font-weight="700" font-size="40" fill="url(#holoFill)" letter-spacing="1">
+    <tspan fill="#00f5ff">Git</tspan><tspan fill="#7c3aed">Holo</tspan>
+  </text>
+
+  <!-- Subtle tagline -->
+  <text x="256" y="458" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#64748b" letter-spacing="3" text-transform="uppercase">
+    3D Holographic Cards
+  </text>
+</svg>

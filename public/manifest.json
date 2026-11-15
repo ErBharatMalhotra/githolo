@@ -1,0 +1,59 @@
+{
+  "name": "GitHolo",
+  "short_name": "GitHolo",
+  "description": "3D Holographic GitHub Profile & Repository Trading Card Generator",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05080f",
+  "theme_color": "#00f5ff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-githolo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-githolo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-githolo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["developer", "design", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Generate My Card",
+      "short_name": "Generate",
+      "description": "Create your 3D holographic GitHub card",
+      "url": "/?username=ErBharatMalhotra",
+      "icons": [{ "src": "/icon-githolo.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Repository Card",
+      "short_name": "Repo Card",
+      "description": "Generate a 3D card for a repository",
+      "url": "/repo?owner=ErBharatMalhotra&repo=GitHolo",
+      "icons": [{ "src": "/icon-githolo.svg", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://readme.bharatdn.com"
+    },
+    {
+      "platform": "web",
+      "url": "https://gitchronicle.bharatdn.com"
+    }
+  ],
+  "prefer_related_applications": false
+}
