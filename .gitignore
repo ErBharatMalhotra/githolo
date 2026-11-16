@@ -40,5 +40,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# AI Documentation (private, for AI context only)
+AI_DOCUMENTATION.md
+PROJECT_CONTEXT.md
+*.ai.md
+*.context.md
+
 .vercel
 .env*
